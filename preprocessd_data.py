@@ -72,7 +72,6 @@ def change_out(read_file,write_file):
 
                 # 转换成一般的语料输入形式
                 line =line.split(' ')
-                id='O'
                 lable=lables[0]
                 for word in line:
                     if word!='':
@@ -80,10 +79,8 @@ def change_out(read_file,write_file):
                             lable=lables[3]
                             split_word=word.split('^')
                             word=split_word[2]
-                            id=split_word[1]
-                            write.write(word+'\t'+lable+'\t'+id+'\n')
+                            write.write(word+'\t'+lable+'\n')
                             if len(split_word)==4:
-                                id='O'                     
                                 lable=lables[0]
                             else:
                                 lable=lables[4]
@@ -91,21 +88,18 @@ def change_out(read_file,write_file):
                             lable=lables[1]
                             split_word=word.split('^')
                             word=split_word[2]
-                            id=split_word[1]
-                            write.write(word+'\t'+lable+'\t'+id+'\n')   
+                            write.write(word+'\t'+lable+'\n')   
                             if len(split_word)==4:
-                                id='O'                     
                                 lable=lables[0]
                             else:
                                 lable=lables[2]                       
                         elif I_tag[0] in word or I_tag[1] in word:
                             split_word=word.split('^')
                             word=split_word[0]
-                            write.write(word+'\t'+lable+'\t'+id+'\n')
-                            id='O'                     
+                            write.write(word+'\t'+lable+'\n')
                             lable=lables[0]                        
                         else:
-                            write.write(word+'\t'+lable+'\t'+id+'\n')                        
+                            write.write(word+'\t'+lable+'\n')                        
                 write.write('\n')    
                 
                     
@@ -144,3 +138,5 @@ if __name__ == '__main__':
     write_files=[processed_train_path,processed_dev_path,processed_test_path,processed_distant_CDWA_path,processed_distant_CDWC_path]
     for read_file,write_file in zip(read_files,write_files):
         change_out(read_file,write_file)
+    
+    
