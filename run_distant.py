@@ -51,12 +51,14 @@ if __name__ == '__main__':
     word_pkl= root +r'word_emb.pkl'
     dev_path = root + r'dev.final.txt'
     ori_dev_path= root + r'/original-data/CDR_DevelopmentSet.PubTator.txt'
-    write_path='/media/administrator/程序卷/zheliu/bc5/predict_distant_base/'
+    write_path='/media/administrator/程序卷/zheliu/bc5/predict_distant_base_CDWA/'
+    # write_path='/media/administrator/程序卷/zheliu/bc5/predict_distant_base_CDWC/'    
     if not os.path.exists(write_path):
         os.makedirs(write_path)
-    predict_path='/media/administrator/程序卷/zheliu/bc5/predict_distant_base/'
+    predict_path=write_path
     record_dev_path='/media/administrator/程序卷/zheliu/bc5/prf_ner_distant_dev.txt'
-    model_save_path='/media/administrator/程序卷/zheliu/bc5/model_distant_base'
+    model_save_path='/media/administrator/程序卷/zheliu/bc5/model_distant_base_CDWA'
+    # model_save_path='/media/administrator/程序卷/zheliu/bc5/model_distant_base_CDWC'    
     if not os.path.exists(model_save_path):
         os.makedirs(model_save_path)
     word_dim=100#50
