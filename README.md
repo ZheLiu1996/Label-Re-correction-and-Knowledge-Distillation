@@ -16,5 +16,5 @@ tqdm >= 4.36.1
 numpy >= 1.17.2
 
 =============================Introduction of the code=====================================
-preprocessd_data.py:convert the original data with the form of pubtator into the commom input form (e.g. Tricuspid	B-Disease)
-processd_data.py:
+preprocessd_data.py:convert the original data with the form of pubtator into the commom  form (e.g. Tricuspid	B-Disease)
+processd_data.py:convert the commom form into the model input form
