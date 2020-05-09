@@ -50,13 +50,13 @@ if __name__ == '__main__':
     word_pkl= root +r'word_emb.pkl'
     dev_path = root + r'dev.final.txt'
     ori_dev_path= root + r'/original-data/CDR_DevelopmentSet.PubTator.txt'
-    write_path='/media/administrator/程序卷/zheliu/bc5/predict_distant_base_lable_refinery3/'
+    write_path='/media/administrator/程序卷/zheliu/bc5/predict_distant_base_lable_recorrect3/'
     if not os.path.exists(write_path):
         os.makedirs(write_path)
-    predict_path='/media/administrator/程序卷/zheliu/bc5/predict_distant_base_lable_refinery3/'
+    predict_path='/media/administrator/程序卷/zheliu/bc5/predict_distant_base_lable_recorrect3/'
     record_dev_path='/media/administrator/程序卷/zheliu/bc5/prf_ner_distant_dev.txt'
     record_test_path='/media/administrator/程序卷/zheliu/bc5/prf_ner_distant_test.txt'
-    model_save_path='/media/administrator/程序卷/zheliu/bc5/model_distant_base_lable_refinery3'
+    model_save_path='/media/administrator/程序卷/zheliu/bc5/model_distant_base_lable_recorrect3'
 
     distant_lable_refinery_pkl=predict_path+'distant_lable_refinery.pkl'
     teacher_lstm_load_path='/media/administrator/程序卷/zheliu/bc5/model_base_split_CDWA_transfer/model_lstm5.pth'
