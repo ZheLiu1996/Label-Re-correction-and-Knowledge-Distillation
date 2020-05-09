@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 import pickle as pkl
-from model_ner_distant import cnn_lstm_no_pad_model
+from model import cnn_lstm_no_pad_model
 import numpy as np
 import torch
 from torchcrf import CRF
