@@ -50,7 +50,7 @@ class InputTrainFeatures(object):
 
 if __name__ == '__main__':
     ########参数设置############
-    root = r'/media/administrator/程序卷/zheliu/bc5/my_data/'#my_data/'#luo_data/'
+    root = r'/media/administrator/程序卷/zheliu/bc5/data/'
     train_pkl = root + r'train.pkl'
     dev_pkl = root + r'dev.pkl'
     test_pkl=root + r'test.pkl'
