@@ -44,7 +44,7 @@ class InputTrainFeatures(object):
 
 if __name__ == '__main__':
     ########参数设置############
-    root = r'/media/administrator/程序卷/zheliu/bc5/my_data/'
+    root = r'/media/administrator/程序卷/zheliu/bc5/data/'
     distant_pkl = root + r'distant.pkl'
     dev_pkl = root + r'dev.pkl'
     word_pkl= root +r'word_emb.pkl'
